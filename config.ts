@@ -1,9 +1,9 @@
 //config.js
 export const CONFIG = {
-    user: 'MESUser', // SQL Server user
-    password: 'localEnvPassword',// password
+    user: 'username', // SQL Server user
+    password: 'password',// password
     server: 'localhost', // host
-    database: 'USIZJIntegartion', // database
+    database: 'db', // database
     port: 1433, // Default 1433
     options: {
         encrypt: false,
@@ -17,9 +17,9 @@ export const CONFIG = {
 }
 
 export const DOWNLOAD_CONFIG: DownloadConfig = {
-    controllerName: "USIZJ_Plasma_Controller", // Controller name
+    controllerName: "Controller", // Controller name
     controllerVersion: 5,                      // Controller version 
-    outputPath: "D:/IOT/Test/downloadMD/"      // The local path where the workflow is stored
+    outputPath: "./downloaded/"      // The local path where the workflow is stored
 }
 
 export interface DownloadConfig {
